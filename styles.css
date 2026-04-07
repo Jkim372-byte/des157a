@@ -1,0 +1,113 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(114, 58, 58, 0.5)), url(image/hero_1.JPG);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: rgb(242, 241, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(242, 241, 235);
+}
+
+.hero_content, h1 {
+    font-family: "Barriecito", system-ui;
+    font-weight: 600;
+    font-size: 170px;
+    margin: auto;
+    max-width: 70%;
+}
+
+li a {
+    color:#113248;
+}
+
+li a:hover {
+    color:#198edc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  color: rgb(242, 241, 235);
+  text-decoration: none;
+  border-radius: 5px;
+  border: rgb(242, 241, 235) solid;
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+body {
+    font-family: "Funnel Display", sans-serif;
+    background-color: rgb(242, 241, 235);
+    animation: colorChange 10s ease infinite;
+    color:#113248;
+
+}
+
+@keyframes colorChange {
+  0%   { background-color: #f2efe1; }
+  50%  { background-color: #e74c3c; } 
+  75% { background-color: #dfba16; }
+  100% { background-color: #f2efe1; }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+main {
+    scroll-margin-top: 80px; 
+    display: flex;
+    gap: 20px;
+   justify-content: center; 
+   padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #006eb8;
+    text-align: center;
+    padding: 10px;
+    color:#fcb315;
+}
+
+footer p {
+    font-family:"Barriecito", system-ui;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#contact_link, a {
+    color:rgb(231, 211, 211);
+    text-decoration: none;
+}
+
+#contact_link {
+    display: inline-block;
+  padding: 12px 24px;
+  background-color: #e74c3c;
+  color: rgb(242, 241, 235);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+#contact_link:hover {
+  transform: scale(1.05);
+}
+
