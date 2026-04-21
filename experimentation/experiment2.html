@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>
+        Want to see your DND character?
+    </h1>
+    <h2>
+        Check the console to unlock your truth!
+    </h2>
+
+
+    <script>
+
+        var name = prompt('Hello. Name your future character for your DND campaign.' + " ");
+        console.log(`Hello, ${name}. You're slowly reawakening from your slumber. Your memories feel faded, but you somehow feel like you know who you are again.`)
+
+
+        var UserClass = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rouge', 'Sorcerer', 'Warlock', 'Wizard'];
+
+        function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNum = min + RoundedRandomVal;
+
+            return finalNum;
+
+        }
+        console.log("Your memories are slowly fading back. You recall your identity.")
+        console.log( "Your class is a" +" " + UserClass[randomInt(0,11)])
+
+        var UserBackground = ['Soldier', 'Criminal', 'Sage', 'Acolyte'];
+
+        function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNum = min + RoundedRandomVal;
+
+            return finalNum;
+        }
+        
+        console.log( 'Your background is being a' + ' ' + UserBackground[randomInt(0,3)])
+
+        var UserLanguage = ['Common Sign Language', 'Draconic', 'Dwarvish', 'Dwarvish', 'Elvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Halfling', 'Halfling', 'Orc'];
+
+        function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNum = min + RoundedRandomVal;
+            
+            return finalNum;
+        }
+        
+        console.log( "Your speak Common, " + UserLanguage[randomInt(0,11)] + ", and " + UserLanguage[randomInt(0,11)])
+
+        var UserAlignment1 = ['Lawfully', 'Neutral', 'Chaotic'];
+        var UserAlignment2 = ['Good', 'Neutral', 'Evil'];
+
+         function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNum = min + RoundedRandomVal;
+         
+         return finalNum;
+         }
+
+         var alignmentIndex = randomInt(0,2)
+         var alignmentIndex2 = randomInt(0,2)
+
+         console.log( "Your are " + UserAlignment1[alignmentIndex] + " " + UserAlignment2[alignmentIndex2])
+
+        if (alignmentIndex === 2) {
+            var ChaoticPersonality = ['Boastful', 'Impulsive', 'Rebellious', 'Self Absorbed'];
+             
+            function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNumChaotic = min + RoundedRandomVal;
+         
+         return finalNumChaotic;
+             }
+
+             var ChaoticIndex = randomInt(0,3)
+              console.log('You are ' + ChaoticPersonality[ChaoticIndex]);
+        } else if (alignmentIndex === 1) {
+             var NeutralPersonality = ['Selfish', 'Disinterested', 'Laconic', 'Pragmatic'];
+             
+            function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNumNeutral = min + RoundedRandomVal;
+         
+         return finalNumNeutral;
+             }
+
+             var NeutralIndex = randomInt(0,3)
+              console.log('You are ' + NeutralPersonality[NeutralIndex]);
+        } else if (alignmentIndex === 0){
+             var LawfulPersonality = ['Cooperative', 'Loyal', 'Judgmental', 'Methodical'];
+                function randomInt( min, max ){
+                var numOfValue = max - min + 1;
+                var RandomNum = Math.random();
+                var RandomVal = RandomNum * numOfValue;
+                var RoundedRandomVal = Math.floor(RandomVal);
+                var finalNumLawful = min + RoundedRandomVal;
+                 return finalNumLawful;
+        }
+    
+             var LawfulIndex = randomInt(0,3)
+              console.log('You are ' + LawfulPersonality[LawfulIndex]);
+        } else {
+            console.log('There was an error! You have no personality!')
+        }
+
+        if (alignmentIndex2 === 0){
+            var GoodPersonality = ['Compassionate', 'Helpful', 'Honest', 'Kind'];
+             
+            function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNumGood = min + RoundedRandomVal;
+         
+         return finalNumGood;
+             }
+
+             var GoodIndex = randomInt(0,3)
+              console.log('You are ' + GoodPersonality[GoodIndex]);
+        } else if (alignmentIndex2 === 1) {
+             var NeutralPersonality2 = ['Selfish', 'Disinterested', 'Laconic', 'Pragmatic'];
+             
+            function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNumNeutral2 = min + RoundedRandomVal;
+         
+         return finalNumNeutral2;
+            }
+              var NeutralIndex2 = randomInt(0,3)
+            console.log('You are ' + NeutralPersonality2[NeutralIndex2]);
+        } else if (alignmentIndex2 === 2){
+             var EvilPersonality = ['Dishonest', 'Vengeful', 'Cruel', 'Greedy'];
+             
+            function randomInt( min, max ){
+            var numOfValue = max - min + 1;
+            var RandomNum = Math.random();
+            var RandomVal = RandomNum * numOfValue;
+            var RoundedRandomVal = Math.floor(RandomVal);
+            var finalNumEvil = min + RoundedRandomVal;
+         
+         return finalNumEvil;
+             }
+
+             var EvilIndex = randomInt(0,3)
+              console.log('You are ' + EvilPersonality[EvilIndex]);
+        }
+
+        console.log('Does this feel like who you are? Refresh again if it does not.')
+         
+
+
+
+    </script>
+    
+</body>
+</html>
