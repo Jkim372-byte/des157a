@@ -1,7 +1,11 @@
-.entry {
-    display: grid;
+body {
     place-items: center;
     background-color: bisque;
+}
+.entry {
+    display: grid;
+        place-items: center;
+
 }
 
 div {
