@@ -4,12 +4,12 @@ body {
 }
 .entry {
     display: grid;
-        place-items: center;
+    place-items: center;
 
 }
 
 div {
-    background-color: blueviolet;
+    background-color: rgb(231, 189, 125);
 }
 .entry p {
     width: 75%;
