@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Mad Lib Script</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+         <h1>Let's Bake a Cake!</h1>
+    </header>
+    <main>
+        <img src="images/mad_lib/madlib_title.png"id="title"width="400" height="550" alt="title">
+        <img src="images/mad_lib/wilson.png" width="300" alt="wilson" id="wilson">
+        <img src="images/mad_lib/mixbowl.png" width="300" alt="bowl" id="bowl">
+        
+        <section class="form_section">
+            <form id="myform">
+            <label for="noun1">
+                Provide a noun.
+            </label>
+            <input type="text" id="noun1" placeholder="e.g., clock" required><br>
+
+            <label for="noun2">
+                Provide another noun.
+            </label>
+            <input type="text" id="noun2" placeholder="e.g., tree" required><br>
+
+            <label for="bird">
+                Provide a bird.
+            </label>
+            <input type="text" id="bird" placeholder="e.g., pigeon" required><br>
+
+            <label for="plant">
+                Provide a plant.
+            </label>
+            <input type="text" id="plant" placeholder="e.g., green onion" required><br>
+
+            <label for="number1">
+                Provide a number.
+            </label>
+            <input type="text" id="number1" placeholder="e.g., 143" required><br>
+
+            <label for="number2">
+                Provide another number.
+            </label>
+            <input type="text" id="number2" placeholder="e.g., 12" required><br>
+
+            <label for="number3">
+                Provide another number.
+            </label>
+            <input type="text" id="number3" placeholder="e.g., 8273" required><br>
+
+            <label for="occupation">
+                Provide an occupation.
+            </label>
+            <input type="text" id="occupation" placeholder="e.g., anesthesiologist" required><br>
+
+            <label for="liquid">
+                Provide a liquid.
+            </label>
+            <input type="text" id="liquid" placeholder="e.g., honey" required><br>
+
+            <label for="time">
+                Provide a time of day.
+            </label>
+            <input type="text" id="time" placeholder="e.g., sunset" required><br>
+
+            <label for="adj">
+                Provide an adjective.
+            </label>
+            <input type="text" id="adj" placeholder="e.g., beautiful" required><br>
+
+            <label for="drink">
+                Provide a drink.
+            </label>
+            <input type="text" id="drink" placeholder="e.g., mai tai" required><br>
+            <input type="submit" value="Send"><br>
+        </form>    
+        </section>
+        <section id="overlay" class="overlay off">
+            <div class="recipe">
+                <p>
+                    Ingredients:<br>
+                    <span class="fill" id="out-number1"></span> of <span class="fill" id="out-bird"></span>'s egg<br>
+                    <span class="fill" id="out-number2"></span> gallons of milk. If dairy is not preferred, use <span class="fill" id="out-plant"></span> milk instead.<br>
+                    3 cups of flour<br>
+                    3 teaspoons of freeze-dried <span class="fill" id="out-plant"></span><br>
+                    A dash of <span class="fill" id="out-noun1"></span><br>
+                    A Baking Tray<br>
+                    Lots and Lots of <span class="fill" id="out-noun2"></span><br>
+                    <br>
+
+                    Recipe:<br>
+                    1. Prepare the tray by spraying <span class="fill" id="out-liquid"></span> to grease the tray.<br>
+                    2. Combine the egg, half of the milk, and flour. <span class="fill" id="out-occupation"></span> must source the flour.<br>
+                    3. Preheat the oven to <span class="fill" id="out-number3"></span> degree for 10 minutes. In the mean time, combine the other half of the milk and 1.5 teaspoon of the <span class="fill" id="out-plant"></span>, and whip until it forms soft peaks.<br>
+                    4. Taste the cream. If it tastes too <span class="fill" id="out-adj"></span>, add a little more <span class="fill" id="out-liquid"></span> and rewhip until it is <span class="fill" id="out-time"></span>.<br>
+                    5. Add the tray with the batter into the oven and let it bake for <span class="fill" id="out-number1"></span> hours. Then, let it cool. <br>
+                    6. Finally, Sprinkle any leftover ingredients. Then, coat it with the frosting!<br>
+                    Tada! Now enjoy it with a cup of <span class="fill" id="out-drink"></span>!
+
+                     <img src="images/mad_lib/recipe.png" alt="recipe card" width="1050" class="recipe">
+                </p>
+            </div>
+            <button id="resetButton">Bake Again?</button>
+        </section>
+        <article id="madlib">
+        </article>
+    </main>
+    <footer>
+        <p>
+            DES 157A
+        </p>
+    </footer> 
+</body>
+</html>

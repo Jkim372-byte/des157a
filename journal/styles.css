@@ -1,20 +1,25 @@
 body {
     place-items: center;
     background-color: bisque;
+    color:rgb(91, 15, 15);
 }
 .entry {
     display: grid;
     place-items: center;
-
 }
 
-div {
+section {
     background-color: rgb(231, 189, 125);
+    gap: 10px;
 }
+
 .entry p {
-    width: 75%;
+    width: 65%;
 }
 
 h1 {
+    font-family: "Peralta", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 100px;
 }
