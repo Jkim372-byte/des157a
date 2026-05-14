@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    background-color: bisque;
+}
+img {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    font-family: "Peralta", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
