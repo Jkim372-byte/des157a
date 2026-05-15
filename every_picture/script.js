@@ -40,4 +40,5 @@
     area9.addEventListener('mouseover', function(){
         console.log('mouseover area9');
     });
+
 })();
