@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Index</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Stack+Sans+Notch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <script src="HTML-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            A collection of my CDs - The discs that keeps time.
+        </h1>
+    </header>
+    <img src="images/cd_collection.jpg" alt="CD Collection" class="cd-collection">
+    <div>
+        <p>
+            Right above this photo is a collection of my CDs. Each disc holds a unique story, a melody that resonates with my soul. They are not just music; they are memories, emotions, and moments frozen in time. Each CD represents a chapter of my life, a soundtrack to my journey. <br>
+            Users can hover over each CD, and when clicking on the CD, shows my experience with the CD. Below is an example of an overlay when the user presses the CD. 
+        </p>
+        <button class="overlay_button">Open Album :D</button>
+    </div>
+    <div class="overlay">
+
+    <div class="album-card">
+         <button class="close-button">&times;</button>
+        <div class="album-art">
+            <img src="images/nfr_melt_cover.png" alt="NFR Melt Cover" class="cover-image">
+
+            <img src="images/nfr_melt_cd.png" alt="NFR Melt CD" class="cd-image">
+            <div class="music-notes">
+                <span class="note">♪</span>
+                <span class="note">♫</span>
+                <span class="note">♬</span>
+            </div>
+        </div>
+
+        <div class="album-info">
+            <h2>Melt — Not For Radio</h2>
+
+            <p>
+                This is an example of an overlay. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta officiis qui reiciendis quidem nulla hic nobis consequatur vitae deserunt omnis?
+            </p>
+
+            <p>
+                Every track feels attached to a memory, which makes this one of
+                the most meaningful albums in my collection.
+            </p>
+            <audio id="album-song" src="audio/nfr_melt_swan_audio.mov"></audio>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

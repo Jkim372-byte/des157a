@@ -7,6 +7,45 @@
     const notes = document.querySelectorAll(".note");
     const audio = document.querySelector("#album-song");
 
+    const area1 = document.querySelector('#area1');
+    const area2 = document.querySelector('#area2');
+    const area3 = document.querySelector('#area3');
+    const area4 = document.querySelector('#area4');
+    const area5 = document.querySelector('#area5');
+    const area6 = document.querySelector('#area6');
+    const area7 = document.querySelector('#area7');
+    const area8 = document.querySelector('#area8');
+    const area9 = document.querySelector('#area9');
+    
+// This adds mouseover event listeners to the areas. When the user hovers over an area, it will log a message to the console indicating which area is being hovered over. This can be useful for debugging or for adding interactivity to the webpage.
+    area1.addEventListener('mouseover', function(){
+        console.log('mouseover area1');
+    });
+    area2.addEventListener('mouseover', function(){
+        console.log('mouseover area2');
+    });
+    area3.addEventListener('mouseover', function(){
+        console.log('mouseover area3');
+    });
+    area4.addEventListener('mouseover', function(){
+        console.log('mouseover area4');
+    });
+    area5.addEventListener('mouseover', function(){
+        console.log('mouseover area5');
+    });
+    area6.addEventListener('mouseover', function(){
+        console.log('mouseover area6');
+    });
+    area7.addEventListener('mouseover', function(){
+        console.log('mouseover area7');
+    });
+    area8.addEventListener('mouseover', function(){
+        console.log('mouseover area8');
+    });
+    area9.addEventListener('mouseover', function(){
+        console.log('mouseover area9');
+    });
+
     /* This opens the overlay */
     openButton.addEventListener("click", function() {
         notes.forEach(note => { 
@@ -18,17 +57,6 @@
         cdImage.classList.remove("slide-out");
         void cdImage.offsetWidth;
         cdImage.classList.add("slide-out");
-
-        if (overlay.id === "nfr_melt") { 
-            const overlay = document.querySelector(".overlay");
-            const albumcard = document.querySelector(".album-card");
-            const musicnotes = document.querySelectorAll(".note");
-            overlay.style.backgroundColor = "rgba(3, 36, 24, 0.8)";
-            albumcard.style.backgroundColor = "#f8f8f2";
-            musicnotes.forEach(note => {
-                note.style.color = "#062e08";
-            });
-     } 
     });
 
     /* This closes the overlay */
@@ -64,5 +92,4 @@
     });
 
 });
-
 })();

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Index</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Stack+Sans+Notch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            A collection of my CDs - The discs that keeps time.
+        </h1>
+    </header>
+    <img src="images/cd_collection.jpg" alt="CD Collection" class="cd-collection" usemap="#image-map">
+
+<map name="image-map">
+    <area  coords="138,476,154,478,133,201,192,159,177,159,115,202" shape="poly">
+    <area  coords="223,480,241,482,217,208,248,163,231,166,197,206" shape="poly">
+    <area  coords="245,488,261,491,246,214,269,167,252,167,222,213" shape="poly">
+    <area  coords="266,488,292,490,274,212,290,163,276,167,249,214" shape="poly">
+    <area  coords="311,491,329,491,314,211,316,167,306,167,291,211" shape="poly">
+    <area  coords="356,494,364,494,349,199,345,165,339,165,339,199" shape="poly">
+    <area  coords="481,494,499,494,485,191,450,155,444,168,470,207" shape="poly">
+    <area  coords="553,485,563,485,555,206,498,167,493,170,539,207" shape="poly">
+    <area  coords="600,485,625,485,617,215,563,172,564,193,598,216" shape="poly">
+</map>
+    <div>
+        <p>
+            Right above this photo is a collection of my CDs. Each disc holds a unique story, a melody that resonates with my soul. They are not just music; they are memories, emotions, and moments frozen in time. Each CD represents a chapter of my life, a soundtrack to my journey. <br>
+            Users can hover over each CD, and when clicking on the CD, shows my experience with the CD. Below is an example of an overlay when the user presses the CD. 
+        </p>
+        <button class="overlay_button">Open Album :D</button>
+    </div>
+    <section>
+            <div class="overlay" id="nfr_melt">
+
+                <div class="album-card">
+                    <button class="close-button">&times;</button>
+                    <div class="album-art">
+                        <img src="images/nfr_melt_cover.png" alt="NFR Melt Cover" class="cover-image">
+
+                        <img src="images/nfr_melt_cd.png" alt="NFR Melt CD" class="cd-image">
+                        <div class="music-notes">
+                            <span class="note">♪</span>
+                            <span class="note">♫</span>
+                            <span class="note">♬</span>
+                        </div>
+                    </div>
+
+                <div class="album-info">
+                    <h2>Melt — Not For Radio</h2>
+
+                    <p>
+                        I got this CD a few days after I went to the Not For Radio concert in San Francisco. It was a magical night filled with incredible music and unforgettable memories. The energy in the venue was ethereal, heartbreaking, and felt so magical. The theme was set around Swan Lake, and as the first concert of 2026, it was a good way to start off my concert-going experience.
+                        <br>
+                        The song that plays is Swan. The song explores vulnerability, heartbreak, and moving past heartbreak all in an embodiment of a Swan, symbolizing eternal love and devotion. It's my favorite song from her album. 
+                    </p>
+
+                    <p>
+                        Every track feels attached to a memory, which makes this one of
+                        the most meaningful albums in my collection.
+                    </p>
+                    <audio id="album-song" src="audio/nfr_melt_swan_audio.mov"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+</html>

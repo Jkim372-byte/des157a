@@ -2,14 +2,20 @@ body {
     margin: 0;
     height: 100vh;
     position: relative;
-    background-color: bisque;
+    background-color: #FAF9F6;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #512a2e;
 }
 img {
     display: block;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px;
 }
 
 header {
@@ -19,6 +25,11 @@ header {
   font-size: 30px;
   text-align: center;
   padding: 20px;
+}
+
+.cd-collection {
+  border: #7e4b50 4px solid;
+  border-radius: 12px;
 }
 
 .music-container {
@@ -34,7 +45,6 @@ header {
   opacity: 0;
 }
 
-/* Define the movement */
 @keyframes floatUp {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -48,3 +58,219 @@ header {
 
 .note:nth-child(2) { animation-delay: 1s; left: 30px; }
 .note:nth-child(3) { animation-delay: 2s; left: 60px; }
+
+div {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    padding: 20px;
+}
+
+/* Fullscreen dark background */
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+    color: #7e4b50;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* The actual card */
+.album-card {
+  background: #f7e7dc;
+  position: relative;
+  width: 700px;
+  max-width: 90%;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    color: #7e4b50;
+    font-size: 14px;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    color: #222;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Hover effect */
+.close-button:hover {
+    background: rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+
+/* Artwork area */
+.album-art {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.cover-image, .cd-image {
+    position: absolute;
+  top: 0;
+  left: 0;
+    width: 100%;
+        height: auto;
+}
+
+/* Cover */
+.cover-image {
+    z-index: 2;
+    top: 188px;
+}
+
+/* CD */
+.cd-image {
+    z-index: 1;
+     transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+    cursor: pointer;
+}
+
+.cd-image:hover {
+    transform: scale(1.08);
+
+    filter: drop-shadow(0 0 12px rgba(232, 230, 227, 0.5));
+}
+
+.cd-image.spinning {
+    animation: spinCD 3s linear infinite;
+    visibility: visible;
+}
+
+/* Continuous rotation */
+@keyframes spinCD {
+    from {
+        transform:
+            translateX(160px)
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            translateX(160px)
+            rotate(360deg);
+    }
+}
+
+/* Text section */
+.album-info {
+    text-align: center;
+
+    color: #512a2e;
+}
+
+.album-info h2 {
+    margin-top: 0;
+
+    font-size: 2rem;
+
+    font-family: "Peralta", serif;
+}
+
+.album-info p {
+    line-height: 1.7;
+}
+
+/* Animation */
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(160px) rotate(10deg);
+    }
+}
+
+.cd-image.slide-out {
+    animation: slideOut 1.2s ease forwards;
+}
+
+.music-notes {
+    position: absolute;
+
+   top: 30%;
+    left: 70%;
+
+    pointer-events: none;
+}
+
+.note {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    visibility: hidden;
+}
+
+/* Active floating animation */
+.note.active {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    visibility: visible;
+}
+
+.note:nth-child(1) {
+    left: 0;
+}
+
+
+
+/* .note:nth-child(2) {
+    left: 40px;
+    animation-delay: 0.5s;
+}
+
+.note:nth-child(3) {
+    left: 80px;
+    animation-delay: 1s;
+} */
+
+/* @keyframes floatNote {
+
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-120px) scale(1.4);
+        opacity: 0;
+    }
+} */
