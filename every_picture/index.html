@@ -18,26 +18,23 @@
             A collection of my CDs - The discs that keeps time.
         </h1>
     </header>
+<div class="selector"></div>
     <img src="images/cd_collection.jpg" alt="CD Collection" class="cd-collection" usemap="#image-map">
 
 <map name="image-map">
-    <area  coords="138,476,154,478,133,201,192,159,177,159,115,202" shape="poly">
-    <area  coords="223,480,241,482,217,208,248,163,231,166,197,206" shape="poly">
-    <area  coords="245,488,261,491,246,214,269,167,252,167,222,213" shape="poly">
-    <area  coords="266,488,292,490,274,212,290,163,276,167,249,214" shape="poly">
-    <area  coords="311,491,329,491,314,211,316,167,306,167,291,211" shape="poly">
-    <area  coords="356,494,364,494,349,199,345,165,339,165,339,199" shape="poly">
-    <area  coords="481,494,499,494,485,191,450,155,444,168,470,207" shape="poly">
-    <area  coords="553,485,563,485,555,206,498,167,493,170,539,207" shape="poly">
-    <area  coords="600,485,625,485,617,215,563,172,564,193,598,216" shape="poly">
+    <area coords="138,474,153,476,133,199,192,160,179,160,117,199" shape="poly" id="area1">
+    <area id="area2" coords="220,483,240,485,219,214,252,166,230,166,198,210" shape="poly">
+    <area id="area3" coords="245,484,263,486,244,213,265,167,254,167,224,213" shape="poly">
+    <area id="area4" coords="268,487,291,487,275,213,290,168,270,168,247,213" shape="poly">
+    <area id="area5" coords="308,489,327,490,311,208,318,170,310,168,293,206" shape="poly">
+    <area id="area6" coords="483,494,498,492,486,186,453,152,442,152,442,169,473,211" shape="poly">
+    <area id="area7" coords="600,488,627,484,616,208,563,173,564,192,591,208" shape="poly">
+    <area id="area8" coords="652,481,660,483,652,203,571,163,568,170,644,205" shape="poly">
+    <area id="area9" coords="356,493,363,493,351,203,346,163,341,167,341,202" shape="poly">
 </map>
-    <div>
-        <p>
-            Right above this photo is a collection of my CDs. Each disc holds a unique story, a melody that resonates with my soul. They are not just music; they are memories, emotions, and moments frozen in time. Each CD represents a chapter of my life, a soundtrack to my journey. <br>
-            Users can hover over each CD, and when clicking on the CD, shows my experience with the CD. Below is an example of an overlay when the user presses the CD. 
-        </p>
-        <button class="overlay_button">Open Album :D</button>
-    </div>
+<!-- Melt NFR, Buzzkill LL, Flower of the Soul LF, Gensou Lamp, Origiami IA, For Lovers Lamp, Bewitched Laufey, AMOT Laufey  -->
+
+</div>
     <section>
             <div class="overlay" id="nfr_melt">
 
@@ -73,5 +70,39 @@
             </div>
         </div>
 </section>
+<section>
+            <div class="overlay" id="lynlapid_buzzkill">
+
+                <div class="album-card">
+                    <button class="close-button">&times;</button>
+                    <div class="album-art">
+                        <img src="images/lynlapid_buzzkill_cover.png" alt="Lyn Lapid Buzzkill Cover" class="cover-image">
+
+                        <img src="images/lynlapid_buzzkill_cd.png" alt="Lyn Lapid Buzzkill CD" class="cd-image">
+                        <div class="music-notes">
+                            <span class="note">♪</span>
+                            <span class="note">♫</span>
+                            <span class="note">♬</span>
+                        </div>
+                    </div>
+
+                <div class="album-info">
+                    <h2>Lyn Lapid - Buzzkill</h2>
+
+                    <p>
+                        I got this CD a few days after I went to the Not For Radio concert in San Francisco. It was a magical night filled with incredible music and unforgettable memories. The energy in the venue was ethereal, heartbreaking, and felt so magical. The theme was set around Swan Lake, and as the first concert of 2026, it was a good way to start off my concert-going experience.
+                        <br>
+                        The song that plays is Swan. The song explores vulnerability, heartbreak, and moving past heartbreak all in an embodiment of a Swan, symbolizing eternal love and devotion. It's my favorite song from her album. 
+                    </p>
+
+                    <p>
+                        Every track feels attached to a memory, which makes this one of
+                        the most meaningful albums in my collection.
+                    </p>
+                    <audio id="album-song" src="audio/nfr_melt_swan_audio.mov"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
