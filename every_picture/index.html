@@ -13,96 +13,340 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>
-            A collection of my CDs - The discs that keeps time.
-        </h1>
-    </header>
-<div class="selector"></div>
-    <img src="images/cd_collection.jpg" alt="CD Collection" class="cd-collection" usemap="#image-map">
+        <header>
+            <h1>
+               ♪ My CD Collection ♬ <br> Some of my Favorites 
+            </h1>
+        </header>
+        <p style="text-align: center; padding: 10px;">I have collected these CDs over multiple years, each having a memory. Hover around and see which one catches your eye!<br> I suggest turning on the device's volume and set the website to fullscreen for the best experience.</p>
+    <div class="selector"></div>
 
-<map name="image-map">
-    <area coords="138,474,153,476,133,199,192,160,179,160,117,199" shape="poly" id="area1">
-    <area id="area2" coords="220,483,240,485,219,214,252,166,230,166,198,210" shape="poly">
-    <area id="area3" coords="245,484,263,486,244,213,265,167,254,167,224,213" shape="poly">
-    <area id="area4" coords="268,487,291,487,275,213,290,168,270,168,247,213" shape="poly">
-    <area id="area5" coords="308,489,327,490,311,208,318,170,310,168,293,206" shape="poly">
-    <area id="area6" coords="483,494,498,492,486,186,453,152,442,152,442,169,473,211" shape="poly">
-    <area id="area7" coords="600,488,627,484,616,208,563,173,564,192,591,208" shape="poly">
-    <area id="area8" coords="652,481,660,483,652,203,571,163,568,170,644,205" shape="poly">
-    <area id="area9" coords="356,493,363,493,351,203,346,163,341,167,341,202" shape="poly">
-</map>
-<!-- Melt NFR, Buzzkill LL, Flower of the Soul LF, Gensou Lamp, Origiami IA, For Lovers Lamp, Bewitched Laufey, AMOT Laufey  -->
+        <img src="images/cd_collection.jpg" alt="CD Collection" class="cd-collection" usemap="#image-map">
 
-</div>
+    <map name="image-map">
+        <area coords="138,474,153,476,133,199,192,160,179,160,117,199" shape="poly" id="area1">
+        <area id="area2" coords="220,483,240,485,219,214,252,166,230,166,198,210" shape="poly">
+        <area id="area3" coords="245,484,263,486,244,213,265,167,254,167,224,213" shape="poly">
+        <area id="area4" coords="268,487,291,487,275,213,290,168,270,168,247,213" shape="poly">
+        <area id="area5" coords="308,489,327,490,311,208,318,170,310,168,293,206" shape="poly">
+        <area id="area6" coords="483,494,498,492,486,186,453,152,442,152,442,169,473,211" shape="poly">
+        <area id="area7" coords="600,488,627,484,616,208,563,173,564,192,591,208" shape="poly">
+        <area id="area8" coords="652,481,660,483,652,203,571,163,568,170,644,205" shape="poly">
+        <area id="area9" coords="356,493,363,493,351,203,346,163,341,167,341,202" shape="poly">
+    </map>
+    <!-- Melt NFR, Buzzkill LL, Flower of the Soul LF, Gensou Lamp, Origiami IA, For Lovers Lamp, Bewitched Laufey, AMOT Laufey  -->
+
+        <section>
+                <div class="overlay" id="nfr_melt">
+
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/nfr_melt_cover.png" alt="NFR Melt Cover" class="cover-image">
+
+                            <img src="images/nfr_melt_cd.png" alt="NFR Melt CD" class="cd-image">
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Melt - Not For Radio</h2>
+
+                        <p>
+                            I got this CD a few days after I went to the Not For Radio concert in San Francisco. It was a magical night filled with incredible music and unforgettable memories. The energy in the venue was ethereal, heartbreaking, and felt so magical. The theme centered on Swan Lake, and as the first concert of 2026, it was a good way to start my concert-going experience.
+                            <br>
+                            The song that plays is Swan. The song explores vulnerability, heartbreak, and moving past heartbreak, all embodied by a Swan that symbolizes eternal love and devotion. It's my favorite song from her album.  
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Swan." I give this song a 7/10 tears: I did cry to this song once, and I felt beautiful.
+                        </p>
+                        <audio id="album-song" src="audio/nfr_melt_swan_audio.mov"></audio>
+                        </div>
+                    </div>
+                </div>
+    </section>
     <section>
-            <div class="overlay" id="nfr_melt">
+                <div class="overlay" id="lynlapid_buzzkill">
 
-                <div class="album-card">
-                    <button class="close-button">&times;</button>
-                    <div class="album-art">
-                        <img src="images/nfr_melt_cover.png" alt="NFR Melt Cover" class="cover-image">
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/lynlapid_buzzkill_cover.png" alt="Lyn Lapid Buzzkill Cover" class="cover-image">
 
-                        <img src="images/nfr_melt_cd.png" alt="NFR Melt CD" class="cd-image">
-                        <div class="music-notes">
-                            <span class="note">♪</span>
-                            <span class="note">♫</span>
-                            <span class="note">♬</span>
+                            <img src="images/lynlapid_buzzkill_cd.png" alt="Lyn Lapid Buzzkill CD" class="cd-image">
+
+                            <img src="images/lynlapid_buzzkill_photo.png" alt="Signed Photo of Lyn Lapid" class="cd-photo">
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Buzzkill - Lyn Lapid</h2>
+
+                        <p>
+                            It was May 21, 2025. I went to her concert with some of my friends. Before, we weren't that close, but after this concert, things started to change. Lyn Lapid's energy was amazing, and I love how everyone wore red!
+                            <br>
+                            The song that plays is called "Floater Friend". I personally like her album, "Buzzkill", because it explores an unmarked territory about platonic and romantic relationships-- the whole album is basically her journey exploring with a self-fulfilling prophecy. "Floater Friend" is my personal favorite because I can relate to the lyrics a lot. I feel like I’m just someone who floats around. She grounds me back to reality.
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Floater Friends." I give this song a 7/10 tears: I did cry to this song once. 
+                        </p>
+                        <audio class="album-song" src="audio/lynlapid_melt_floaterfriend_audio.mov"></audio>
                         </div>
                     </div>
-
-                <div class="album-info">
-                    <h2>Melt — Not For Radio</h2>
-
-                    <p>
-                        I got this CD a few days after I went to the Not For Radio concert in San Francisco. It was a magical night filled with incredible music and unforgettable memories. The energy in the venue was ethereal, heartbreaking, and felt so magical. The theme was set around Swan Lake, and as the first concert of 2026, it was a good way to start off my concert-going experience.
-                        <br>
-                        The song that plays is Swan. The song explores vulnerability, heartbreak, and moving past heartbreak all in an embodiment of a Swan, symbolizing eternal love and devotion. It's my favorite song from her album. 
-                    </p>
-
-                    <p>
-                        Every track feels attached to a memory, which makes this one of
-                        the most meaningful albums in my collection.
-                    </p>
-                    <audio id="album-song" src="audio/nfr_melt_swan_audio.mov"></audio>
-                    </div>
                 </div>
-            </div>
-        </div>
-</section>
-<section>
-            <div class="overlay" id="lynlapid_buzzkill">
+        </section>
+    <section>
+                <div class="overlay" id="lianaflores_fots">
 
-                <div class="album-card">
-                    <button class="close-button">&times;</button>
-                    <div class="album-art">
-                        <img src="images/lynlapid_buzzkill_cover.png" alt="Lyn Lapid Buzzkill Cover" class="cover-image">
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/lianaflores_fots_cover.png" alt="Liana Flores's Flower of the Soul, Cover" class="cover-image">
+                            <img src="images/lianaflores_fots_cd.png" alt="Liana Flores' Flower of the Soul CD" class="cd-image">
+                            <!-- <img src="images/lianaflores_fots_photo.jpg" alt="Photo with me and my friend with Liana Flores" class="cd-photo" width="700"> -->
 
-                        <img src="images/lynlapid_buzzkill_cd.png" alt="Lyn Lapid Buzzkill CD" class="cd-image">
-                        <div class="music-notes">
-                            <span class="note">♪</span>
-                            <span class="note">♫</span>
-                            <span class="note">♬</span>
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Liana Flores - Flower of the Soul</h2>
+
+                        <p>
+                            This is the third CD I have ever collected. I've been listening to her music since 2020, when she released her EP, "Recently." In 2024, Liana Flores went on her first tour in North America, and we were the first venue! She was pretty shy, but her energy was amazing!    
+                            <br>
+                            The song that plays is called "I wish for the rain." It feels reminiscent of walking past a jazz bar late at night, with rain pattering down on the sidewalk. She drifts away under street lamps, drowning out all of the stars that might have been guiding her way back home. In a way, this is my favorite song from her album because sometimes, I also wish for the rain to drown out my sorrows for me. 
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "I wish for the rain." I give this song a 7/10 tears: I did cry to this song once. 
+                        </p>
+                        <audio class="album-song" src="audio/lianaflores_fots_audio.mov"></audio>
                         </div>
                     </div>
+                </div>
+        </section>
+        <section>
+                <div class="overlay" id="lamp_gensou">
 
-                <div class="album-info">
-                    <h2>Lyn Lapid - Buzzkill</h2>
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/lamp_gensou_cover.png" alt="Lamp Genso, CD Cover" class="cover-image">
+                            <img src="images/lamp_gensou_cd.png" alt="Lamp Genso, CD" class="cd-image">
 
-                    <p>
-                        I got this CD a few days after I went to the Not For Radio concert in San Francisco. It was a magical night filled with incredible music and unforgettable memories. The energy in the venue was ethereal, heartbreaking, and felt so magical. The theme was set around Swan Lake, and as the first concert of 2026, it was a good way to start off my concert-going experience.
-                        <br>
-                        The song that plays is Swan. The song explores vulnerability, heartbreak, and moving past heartbreak all in an embodiment of a Swan, symbolizing eternal love and devotion. It's my favorite song from her album. 
-                    </p>
 
-                    <p>
-                        Every track feels attached to a memory, which makes this one of
-                        the most meaningful albums in my collection.
-                    </p>
-                    <audio id="album-song" src="audio/nfr_melt_swan_audio.mov"></audio>
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Lamp Genso - Lamp</h2>
+
+                        <p>
+                            I've been listening to Lamp since middle school, and I'm glad they're having their moment. Lamp Genso is their fourth studio album and one of their well-known albums. I went to see Lamp twice; the first time wasn't as enjoyable as the second time. They were magical every single time. Lamp Genso translates to Lamp Fantasy, perfectly fitting the whimsy vibe in this album.
+                            <br>
+                            My favorite song from this album is "Hisoyakani" or "Secretly" (in a poetic way... there's no English translation for it). It captures the bittersweet feeling of a quiet afternoon, where nature brings back memories of youth and old romances. I absolutely love the instrumentals in this song.
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Hisoyakani". I give this song a 4/10 tears: I did not cry to this song, but its lyrics does make me feel something. 
+                        </p>
+                        <audio class="album-song" src="audio/lamp_gensou_hisoyakani_audio.mov"></audio>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-</body>
+        </section>
+        <section>
+                <div class="overlay" id="ia_origami">
+
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/ia_origami_cover.png" alt="Ichiko Aoba's Origiami, CD Cover" class="cover-image">
+                            <img src="images/ia_origiami_cd.png" alt="Ichiko Aoba's Origiami, CD" class="cd-image">
+
+
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Origami - Ichiko Aoba</h2>
+
+                        <p>
+                            Ichiko Aoba's 2011 album, Origami, would be an album I would show to someone if someone say Ichiko Aoba sucks. This album is the epitome of a dreamy, acoustic heaven. The way she strums the guitar and plays tabs just speaks beauty. Her album explores isolation, memory, and the boundary between reality and dreams.
+                            <br>
+                            "Omoide Cafe" or "Nostagia Cafe" is my favorite in this album because of its chirpy tune compared to its soft ambient songs in her other album. This song explores looking back, imagining a cafe where she and someone else used to be. She is reminiscing over someone, and I feel like I always reminscene for the past as well.
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Omoide Cafe." I give this song a 2/10. Never made me cry. I like the poetry but this song is not a tearjerker.
+                        </p>
+                        <audio class="album-song" src="audio/ia_origiami_omoidecafe_audio.mov"></audio>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+                <div class="overlay" id="laufey_eikal">
+
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/laufey_eikal_cover.png" alt="Laufey's Everything I Know About Love, CD Cover" class="cover-image">
+                            <img src="images/laufey_eikal_cd.png" alt="Laufey's Everything I Know About Love, CD" class="cd-image">
+
+
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Everything I Know About Love - Laufey</h2>
+
+                        <p>
+                            This is the first CD I've ever had. I got it as a birthday present in 2024. Laufey is my favorite artist of all time, and "Everything I Know About Love" is my favorite album (and the best album in her discography). Her album is like a trilogy since each album follows the cycle of love. In her debut album, she explores naivete in a world of romance, as well as reminiscing over her childhood and her heritage.
+                            <br>
+                            "Just like Chet" is my favorite. Not only is it an homage to Chet Baker, but the song gives space for both Laufey and Chet Baker to mourn about their heartache, with both the trumpet (Chet Baker's instrunment), and the Cello (Laufey's instrument) harmonizing. I actually listened to this song on Spotify 298 times. This song is about the tendency to fall in love easily, idealizing love, and suffering from unfulfilled expectations. She feels vulnerable and wishes for an alternate reality, lamenting how idealization leads to heartbreak and disappointment.
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Just like Chet." I give this song a 8/10 tears. This song makes me want to cry at 4 AM.
+                        </p>
+                        <audio class="album-song" src="audio/laufey_eikal_justlikechet_audio.mov"></audio>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+                <div class="overlay" id="lamp_fl">
+
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/lamp_fl_cover.png" alt="Lamp's For Lovers, CD Cover" class="cover-image">
+                            <img src="images/lamp_fl_cd.png" alt="Lamp's For Lovers, CD" class="cd-image">
+
+
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>For Lovers - Lamp</h2>
+
+                        <p>
+                            This is one of Lamp's famous albums, "For Lovers", which debuted to the world in 2004. "For Lovers" has to be my favorite album in their discography. The album portrays a story of two lovers going through a breakup, and thinking about their past relationship.
+                            <br>
+                            My favorite song in the album has to be the title track, "For Lovers." It's a short, melancholic song that introduces the story in media res: a person looking at the seasons changing but being reminded of their lover in the ever-moving scenery. I love this song personally because it reminds me of the past relationships I've been in, while feeling a sense of tranquility tinged with melancholy by the slow strum of the guitar. 
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "For Lovers". I give this song a 5/10 tears. Did not make me cry, but made me remember the past often.
+                        </p>
+                        <audio class="album-song" src="audio/lamp_fl_fl_audio.mov"></audio>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+                <div class="overlay" id="laufey_bewitched">
+
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/laufey_bewitched_cover.png" alt="Laufey's Bewitched, CD Cover (Japanese Edition)" class="cover-image">
+                            <img src="images/laufey_bewitched_cd.png" alt="Laufey's Bewitched, CD (Japanese Edition)" class="cd-image">
+
+
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>Bewitched: The Goddess Edition (Japanese Edition) - Laufey</h2>
+
+                        <p>
+                            Laufey's second studio album, "Bewitched," brought her to stardom, with viral songs like "From the Start" and "Dreamer." This is one of the first CDs I have ever ordered from eBay. This one is special because it includes 4 live songs at the end, as well as a Japanese obi (sleeve). This album is the second part of the story: it explores falling in love and its emotional rollercoaster.
+                            <br>
+                            My favorite song is Goddess, but of course, since this is the Japanese Edition, I picked the live edition for you to hear. Compared to the studio version, the live song feels more vulnerable and honest, as the studio one feels very ethereal and cathartic. I personally like this song because of the lyric: "I'm no goddess when I'm alone" because like WHY DID SHE EAT WITH THAT--  
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Goddess (Live From Home)." I give this song a 7/10 tears, not super sad live but with the studio version: 8.5/10 tears.
+                        </p>
+                        <audio class="album-song" src="audio/laufey_bewitched_goddesslive_audio.mov"></audio>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+                <div class="overlay" id="laufey_amot">
+
+                    <div class="album-card">
+                        <button class="close-button">&times;</button>
+                        <div class="album-art">
+                            <img src="images/laufey_amot_cover.png" alt="Laufey's A Matter of Time, CD Cover" class="cover-image">
+                            <img src="images/laufey_amot_cd.png" alt="Laufey's A Matter of Time, CD" class="cd-image">
+                            <img src="images/laufey_amot_photo.png" alt="Signed Photo of Laufey at her Studio" class="cd-photo">
+
+
+                            <div class="music-notes">
+                                <span class="note">♪</span>
+                                <span class="note">♫</span>
+                                <span class="note">♬</span>
+                            </div>
+                        </div>
+
+                    <div class="album-info">
+                        <h2>A Matter of Time - Laufey</h2>
+
+                        <p>
+                            Laufey's third studio album, "A Matter of Time," explores the passage of time as she devolves from her relationship; the motif of time reminds the listener of how little time is left in the relationship. In my opinion, this is my least favorite album of the three, but she really experiments a lot in this one.
+                            <br>
+                            My favorite song is "Carousel." (Fun Fact: I couldn't spell Carousel for the longest time until I listened to this song. I listened to it so much that it made me remember how to spell the word.) "Carousel" uses a chirpy melody, reminding the listener of a carousel. However, the song is about the fragile beauty of letting someone see you fully, mess and all. She uses a circus motif to capture the chaos of living with flaws. I really like this song since it reminds me of multiple songs from her previous albums, and I can relate to the idea of showing my vulnerabilities and thinking of it as a burden.
+                        </p>
+
+                        <p>
+                            Press the CD to listen to a snippet of "Carousel." I give this song a 5/10 tears, did not make me cry and it's a fun tune to listen to.
+                        </p>
+                        <audio class="album-song" src="audio/laufey_amot_carousel_audio.mov"></audio>
+                        </div>
+                    </div>
+                </div>
+        </section>
+<footer>
+    <p>
+        Jonathan Kim <br> DES 151 <br> Every Picture Project SpQ 2026
+    </p>
+</footer>
+    </body>
 </html>

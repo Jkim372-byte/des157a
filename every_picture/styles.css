@@ -1,8 +1,7 @@
 body {
     margin: 0;
-    height: 100vh;
     position: relative;
-    background-color: #FAF9F6;
+    background: linear-gradient(180deg, rgba(250, 249, 246, 1) 53%, rgba(243, 227, 179, 1) 100%);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -18,6 +17,16 @@ img {
     transform: translate(-50%, -50%);
 }
 
+footer {
+    background-color: #f3e3b3;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #be646d;
+    font-size: 15px;
+}
+
+
 .selector {
     width: 300px;
     height: 40px;
@@ -31,7 +40,7 @@ img {
 .selector p {
     color: #7e4b50;
     text-align: center;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 header {
@@ -47,6 +56,7 @@ header {
 .cd-collection {
   border: #7e4b50 4px solid;
   border-radius: 12px;
+  top: 300px;
 }
 
 .music-container {
@@ -162,13 +172,14 @@ div {
 
 /* Cover */
 .cover-image {
-    z-index: 2;
+    z-index: 3;
     top: 188px;
+    pointer-events: none;
 }
 
 /* CD */
 .cd-image {
-    z-index: 1;
+    z-index: 2;
      transition:
         transform 0.3s ease,
         filter 0.3s ease;
@@ -185,6 +196,18 @@ div {
     animation: spinCD 3s linear infinite;
     visibility: visible;
 }
+
+.cd-photo {
+    display: block;
+    width: 220px;
+    z-index: 0;
+    transform: rotate(16deg);
+    left: 230px;
+    transition: 
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
 
 /* Continuous rotation */
 @keyframes spinCD {
@@ -231,8 +254,22 @@ div {
     }
 }
 
+@keyframes slideOut2 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px) rotate(10deg);
+    }
+}
+
 .cd-image.slide-out {
     animation: slideOut 1.2s ease forwards;
+}
+
+.cd-photo.slide-out {
+    animation: slideOut2 1.2s ease forwards;
 }
 
 .music-notes {
