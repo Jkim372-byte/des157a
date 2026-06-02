@@ -1,0 +1,80 @@
+body {
+    background-color: #dfcfac;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    animation: colorChange 7s infinite ease-in-out;
+    padding: 0; 
+    margin: 0; 
+    background: #dfcfac; 
+    background-image: radial-gradient(#7993c6 3px, transparent 3px);
+    background-size: 50px 50px;
+    text-align: center;
+    color: #234c6e;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    background-color: rgb(216, 240, 254);
+  }
+  33% {
+    background-color: rgb(227, 203, 232);
+  }
+  66% {
+    background-color: rgb(217, 248, 211);
+  }
+}
+section {
+     background-color: rgb(255, 253, 244);
+    border: 2px solid rgb(255, 253, 244, 0);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(26, 86, 150, 0.1);
+}
+.inside {
+    background-color: rgb(255, 253, 244);
+    border: 2px solid rgb(255, 253, 244, 0);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(26, 86, 150, 0.1);
+}
+
+h1 {
+    font-size: 50px;
+    color: #234c6e;
+    margin-bottom: 20px;
+}
+
+.game {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: none;
+    box-shadow: none;
+    position: relative;
+}
+
+.tamagotchi {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+}
+
+.potchichi {
+    display: block;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
