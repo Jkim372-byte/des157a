@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button class="volume_button_unmuted">
+        <p>
+            🔇
+        </p>
+    </button>
+    <button class="volume_button">
+        <p>
+            🔊
+        </p>
+    </button>
+    <audio class="background_music" src="audio/Shortcake - Nobonoko.mp3" loop></audio>
+     <div class="transition" id="player_2_transition" style="display: none;">
+        <img src="image/player2_transition.png" alt="player 2 transition" class="player2_transition">
+     </div>
+     <div class="transition" id="player_1_transition" style="display: none;">
+        <img src="image/player1_transition.png" alt="player 1 transition" class="player1_transition"> <audio src="player_transition_acnh.mp3"></audio>
+     </div>
+    
+     <div class="transition" id="game_end_overlay" style="display: none;">
+         <div class="game_end_card">
+            <h1>
+                Game Finished!
+            </h1>
+            <h2>
+                Congrats to Player <span class="winner"></span> for winning the game!
+            </h2>
+            <p id="score_end">
+                Player 1 Score: <span class="player1_final_score"></span><br>
+                Player 2 Score: <span class="player2_final_score"></span>
+            </p>
+            <button id="restart_button" class="button">Restart Game</button>
+            <audio src="audio/game_start.mp3"></audio>
+         </div>
+        </div>
+
+    <section class="inside">
+        <h1 style="font-size: 60px;">
+            TAMOGYATCHI!!
+        </h1>
+        <h2>
+             Guess the Number Game!!
+        </h2>
+        <p>
+            Guess if the next number is higher or lower than the current one! There are five guesses, get as many right as you can! Player 1 will go first, then Player 2! Player 1 may start whenever they're ready by clicking the "Higher" or "Lower" button.<br><br>
+            Jonathan Kim | DES 157A | SP2026
+        </p>
+    </section>
+            <img src="image/tamagotchi.png" alt="tamogatchi" class="tamagotchi">
+        <section class="game">
+            <section class="scoreboard">
+                <p class="player1_score highlight">Player 1: 0</p><p class="player2_score">Player 2: 0</p>
+            </section>
+            <p class="number">1</p>
+            <img src="image/potchichi_idle.gif" alt="potchichi idle" class="potchichi">
+            <div class="rectangle"></div>
+            <p class="result">1</p>
+            <div class="resultAnswer">
+                <p></p>
+            </div>
+            <button id="higher_button" class="button" style="top: 340px;"> ↑ Higher</button><audio src="audio/button_press.mp3"></audio>
+            <button id="lower_button" class="button" style="top: 340px; right: 20px;">↓ Lower</button>
+            <audio src="audio/button_press.mp3"></audio>
+        </section>
+</body>
+</html>

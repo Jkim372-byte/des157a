@@ -13,6 +13,20 @@ body {
     color: #234c6e;
     height: 100vh;
     overflow: hidden;
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 80px;
+}
+h1, h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @keyframes colorChange {
@@ -27,7 +41,7 @@ body {
   }
 }
 section {
-     background-color: rgb(255, 253, 244);
+    background-color: rgb(255, 253, 244);
     border: 2px solid rgb(255, 253, 244, 0);
     border-radius: 10px;
     padding: 20px;
@@ -40,9 +54,12 @@ section {
     border: 2px solid rgb(255, 253, 244, 0);
     border-radius: 10px;
     padding: 20px;
-    max-width: 600px;
+    max-width: 680px;
     margin: 40px auto;
     box-shadow: 0 4px 8px rgba(26, 86, 150, 0.1);
+    display: block;
+    position: relative;
+    top: -40px;
 }
 
 h1 {
@@ -77,4 +94,279 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
+}
+
+.player1_score, .player2_score {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 14px;
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #234c6e;
+    border-radius: 10px;
+}
+
+.highlight {
+    background-color: #f4d214;
+    font-weight: 700;
+    color: #234c6e;
+}
+
+.scoreboard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    z-index: 2;
+    background: #cee9f7;
+    border: 2px solid #234c6e;
+    padding: 10px 15px;
+    width: auto;
+    margin-bottom: 20px;
+    top: -110px;
+    left: 60px;
+}
+
+
+.number {
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 220px;
+    color: #f4d214;
+    margin-top: 150px;
+    position: absolute;
+    left: 60px;
+    top: -120px;
+    background: #234c6e;
+}
+
+#guess {
+   font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 140px;
+    height: 250px;
+    font-size: 150px;
+    padding: 10px;
+    border: 2px solid #234c6e;
+    border-radius: 5px;
+    margin-top: 200px;
+    position: absolute;
+    top: -173px;
+    right: 16px;
+    border: none;
+    background: #407cb1;
+    color: #fcc80b;
+
+}
+
+.result {
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 220px;
+    color: #f4d214;
+    margin-top: 150px;
+    position: absolute;
+    right: 58px;
+    top: -120px;
+    background: #234c6e;
+    display: block; 
+}
+
+.result-hidden {
+    display: none;
+}
+
+.resultAnswer {
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #234c6e;
+    top: 287px;
+    position: relative;
+    
+}
+
+.rectangle {
+    width: 180px;
+    height: 300px;
+    background-color: #accbdf;
+    position: absolute;
+    top: 17px;
+    left: 84%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: block;
+}
+
+.rectangle-hidden {
+    display: none;
+}
+
+.button {
+    font-family: "Pixelify Sans", sans-serif;
+    display: block;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: 120px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid #234c6e;
+    border-radius: 5px;
+    position: absolute;
+    top: -173px;
+    background: #407cb1;
+    color: #fcc80b;
+    z-index: 3;
+}
+
+.button:hover {
+    background: #234c6e;
+    color: #407cb1;
+    cursor: pointer;
+}
+
+.transition {
+    position: absolute;
+    inset: 0;
+    background: rgba(82, 9, 59, 0.8);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    height: 110vh;
+    opacity: 100;
+    visibility: visible;
+    transition: 0.3s ease;
+    z-index: 5;
+}
+
+.transition-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    position: absolute;
+}
+
+.player2_transition {
+    width: 1500px;
+    animation: player2EnterExit 3.6s ease-out forwards;
+}
+
+.player1_transition {
+    width: 1500px;
+    animation: player2EnterExit 3.6s ease-out forwards;
+}
+
+@keyframes player2EnterExit {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+}
+
+/* .game_end {
+    position: absolute;
+    inset: 0;
+    background: rgba(82, 9, 59, 0.8);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    opacity: 100;
+    visibility: visible;
+    transition: 0.3s ease;
+    z-index: 5;
+} */
+.game_end_card {
+    background-color: rgb(255, 253, 244);
+    border: 2px solid rgb(255, 253, 244, 0);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(26, 86, 150, 0.1);
+
+    }
+
+ #restart_button {
+    position: relative;
+    margin: 20px auto 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    z-index: 6;
+}  
+
+.volume_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    z-index: 6;
+    background: rgba(27, 232, 27, 0.5); 
+    border-radius: 50%;
+}
+
+.volume_button:hover {
+    background: rgba(27, 232, 27, 0.5); 
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.volume_button_unmuted {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    z-index: 6;
+    background: rgba(232, 27, 27, 0.286);
+    border-radius: 50%;
+    display: none;
+}
+
+.volume_button_unmuted:hover {
+    background: rgba(232, 27, 27, 0.286);
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+
+.volume_button p {
+    font-size: 10px;
+    color: #222;
+    margin: 0;
 }
